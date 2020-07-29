@@ -5,7 +5,7 @@
       "link": "https://www.youtube.com/watch?v=eRmDsGFBHlo",
       "cor": "#BF9000",
       "link_extra": {
-        "text": "Canal com meus vídeos antigos no Youtube",
+        "text": "Canal com meus vídeos antigos no Youtube (vários de fitas VHS)",
         "url": "https://www.youtube.com/feed/my_videos"
       },
       "videos": [
@@ -39,7 +39,7 @@
       "titulo": "Any-End Dev",
       "cor": "#00C86F",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
+        "text": "Mais cursos na Alura (Back e Front End)",
         "url": "https://www.alura.com.br/cursos-online-programacao"
       },
       "videos": [
@@ -86,16 +86,16 @@
       ]
     },
     {
-      "titulo": "Data Science e Inteligência Artificial",
+      "titulo": "Analytics, Data Science, ML, IA, etc... ",
       "cor": "#9cd33b",
       "link_extra": {
-        "text": "SAS Forum Lisboa 2018 - Nadim Habib",
+        "text": "SAS Forum Lisboa 2018 - Nadim Habib (Digitalização)",
         "url": "https://www.youtube.com/watch?v=ap6DJMHq3E0"
       },
       "videos": [
         {
           "titulo": "Digital Evolution - Nadim Habib (SAS Lisboa 2018)",
-          "url": "ttps://www.youtube.com/watch?v=ap6DJMHq3E0"
+          "url": "https://www.youtube.com/watch?v=ap6DJMHq3E0"
         },
         {
           "titulo": "Teste de Turing",
@@ -114,10 +114,22 @@
     {
       "titulo": "Filmes",
       "cor": "orange",
+      "link_extra": {
+        "text": "Meus filmes preferidos - tudo Ficção Científica, rsrs",
+        "url": "https://www.youtube.com/watch?v=JWqCEzZEv2k"
+      },
       "videos": [
+        {
+          "titulo": "Tron (1982)",
+          "url": "https://www.youtube.com/watch?v=CFnqHtk4610"
+        },
         {
           "titulo": "Oblivion",
           "url": "https://www.youtube.com/watch?v=vu24CjeSsLs"
+        },
+        {
+          "titulo": "Eu, robô",
+          "url": "https://www.youtube.com/watch?v=JWqCEzZEv2k"
         },
         {
           "titulo": "Minority Report",
@@ -126,10 +138,6 @@
         {
           "titulo": "Tron (2)",
           "url": "https://www.youtube.com/watch?v=JgzAZdK7uWQ"
-        },
-        {
-          "titulo": "Tron (1982)",
-          "url": "https://www.youtube.com/watch?v=CFnqHtk4610"
         }
       ]
     },
@@ -137,29 +145,29 @@
       "titulo": "Games",
       "cor": "red",
       "link_extra": {
-        "text": "Formação de Jogos na Alura",
+        "text": "Formação de Jogos na Alura ('jabá' para quem me ensinou a fazer esta página)",
         "url": "https://www.alura.com.br/formacao-jogos-unity"
       },
       "videos": [
         {
-          "titulo": "Diablo 4",
-          "url": "https://www.youtube.com/watch?v=tflKwXOESyc"
+          "titulo": "Resident Evil 3: Nemesis",
+          "url": "https://www.youtube.com/watch?v=qnEmuhdVPRw"
         },
         {
-          "titulo": "Diablo 3",
-          "url": "https://www.youtube.com/watch?v=aaCZGs0PeLs"
+          "titulo": "Green Beret (arcade)",
+          "url": "https://www.youtube.com/watch?v=gq93SKoNauw"
         },
         {
-          "titulo": "Diablo 2",
-          "url": "https://www.youtube.com/watch?v=xp20voR11gs"
+          "titulo": "Atari Stun Runner (arcade)",
+          "url": "https://www.youtube.com/watch?v=735p06-UExA"
+        },
+        {
+          "titulo": "Diablo 4 (coming soon)",
+          "url": "https://www.youtube.com/watch?v=gSGSaxKAz4Y"
         },
         {
           "titulo": "Diablo: do 1996 até 2020",
           "url": "https://www.youtube.com/watch?v=jXGMDxP4n0o"
-        },
-        {
-          "titulo": "Resident Evil 3: Nemesis",
-          "url": "https://www.youtube.com/watch?v=qnEmuhdVPRw"
         }
       ]
     },
