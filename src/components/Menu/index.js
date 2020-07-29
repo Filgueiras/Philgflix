@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../assets/PhilgFlixLogo-blue.png';
+import Logo from '../../assets/PhilgFlixLogo.png';
 import './menu.css';
 //import ButtonLink from './ButtonLink';
 import Button from '../Button';
