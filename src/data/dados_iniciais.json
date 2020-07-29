@@ -1,7 +1,7 @@
 {
   "categorias": [
     {
-      "titulo": "Tio Nerd",
+      "titulo": "Assunto antigo",
       "link": "https://www.youtube.com/watch?v=eRmDsGFBHlo",
       "cor": "#BF9000",
       "link_extra": {
@@ -22,13 +22,21 @@
           "url": "https://www.youtube.com/watch?v=9oZxHWXCHQQ"
         },
         {
+          "titulo": "Pequenos Planetas, em 2003... Discovery Kids",
+          "url": "https://www.youtube.com/watch?v=s752-eDZlIA"
+        },
+        {
+          "titulo": "Falcão: I'm not dog,no! - Doris para Maiores",
+          "url": "https://www.youtube.com/watch?v=94-5CpxQVTk"
+        },
+        {
           "titulo": "Em 2008, AIG quase quebrou e Unibanco fundiu com Itaú",
           "url": "https://www.youtube.com/watch?v=9af0s_ABnFo"
-        }        
+        }       
       ]
     },
     {
-      "titulo": "X End",
+      "titulo": "Any-End Dev",
       "cor": "#00C86F",
       "link_extra": {
         "text": "Cursos de Back End na Alura",
@@ -81,10 +89,14 @@
       "titulo": "Data Science e Inteligência Artificial",
       "cor": "#9cd33b",
       "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/formacao-data-science"
+        "text": "SAS Forum Lisboa 2018 - Nadim Habib",
+        "url": "https://www.youtube.com/watch?v=ap6DJMHq3E0"
       },
       "videos": [
+        {
+          "titulo": "Digital Evolution - Nadim Habib (SAS Lisboa 2018)",
+          "url": "ttps://www.youtube.com/watch?v=ap6DJMHq3E0"
+        },
         {
           "titulo": "Teste de Turing",
           "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
@@ -96,10 +108,6 @@
         {
           "titulo": "Melhor forma de aprender Python",
           "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
-        },
-        {
-          "titulo": "Como ingressar no mercado de Data Science?",
-          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
         }
       ]
     },
@@ -108,20 +116,20 @@
       "cor": "orange",
       "videos": [
         {
-          "titulo": "Interestellar",
-          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+          "titulo": "Oblivion",
+          "url": "https://www.youtube.com/watch?v=vu24CjeSsLs"
         },
         {
-          "titulo": "Gattaca",
-          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+          "titulo": "Minority Report",
+          "url": "https://www.youtube.com/watch?v=WncVJ0TNCDc"
         },
         {
-          "titulo": "A Chegada",
-          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+          "titulo": "Tron (2)",
+          "url": "https://www.youtube.com/watch?v=JgzAZdK7uWQ"
         },
         {
-          "titulo": "Feitiço do Tempo",
-          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+          "titulo": "Tron (1982)",
+          "url": "https://www.youtube.com/watch?v=CFnqHtk4610"
         }
       ]
     },
@@ -134,24 +142,24 @@
       },
       "videos": [
         {
-          "titulo": "Final Fantasy 7",
-          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+          "titulo": "Diablo 4",
+          "url": "https://www.youtube.com/watch?v=tflKwXOESyc"
         },
         {
-          "titulo": "Assassins Creed Valhalla",
-          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+          "titulo": "Diablo 3",
+          "url": "https://www.youtube.com/watch?v=aaCZGs0PeLs"
         },
         {
-          "titulo": "God of War 4",
-          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+          "titulo": "Diablo 2",
+          "url": "https://www.youtube.com/watch?v=xp20voR11gs"
         },
         {
-          "titulo": "Resident Evil 8",
-          "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+          "titulo": "Diablo: do 1996 até 2020",
+          "url": "https://www.youtube.com/watch?v=jXGMDxP4n0o"
         },
         {
-          "titulo": "Pokémon Let's Go Pikachu/Eevee",
-          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+          "titulo": "Resident Evil 3: Nemesis",
+          "url": "https://www.youtube.com/watch?v=qnEmuhdVPRw"
         }
       ]
     },

@@ -20,6 +20,26 @@ function App() {
           ignoreFirtVideo
           category={dadosIniciais.categorias[0]}
         />
+
+        <Carousel
+          ignoreFirtVideo
+          category={dadosIniciais.categorias[2]}
+        />
+
+        <Carousel
+          ignoreFirtVideo
+          category={dadosIniciais.categorias[3]}
+        />
+
+        <Carousel
+          ignoreFirtVideo
+          category={dadosIniciais.categorias[4]}
+        />
+
+        <Carousel
+          ignoreFirtVideo
+          category={dadosIniciais.categorias[1]}
+        />
     </div>
   );
 }
