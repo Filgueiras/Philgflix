@@ -9,6 +9,17 @@ function App() {
   return (
     <div>
         <Menu />
+
+        <BannerMain 
+          videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
+          url={dadosIniciais.categorias[0].videos[0].url}
+          videoDescription={"HAL 9000, vilão de 2001-Uma odisséia no espaço, conta sobre o bug do milênio"}
+        />
+
+        <Carousel
+          ignoreFirtVideo
+          category={dadosIniciais.categorias[0]}
+        />
     </div>
   );
 }
