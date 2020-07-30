@@ -13,7 +13,7 @@ function Home() {
         <BannerMain
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
         url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription={"Final do Super Bowl de 1999. Apple coloca HAL 9000 para falar do Bug do Milênio."}
+        videoDescription={"Anúncio da Apple na final do Super Bowl 1999. O vilão de 2001, uma odisséia no espaço fala do Bug do Milênio e de como Dave gosta mais do Mac do que dele."}
         />
 
         <Carousel
