@@ -1,6 +1,8 @@
 import React from 'react';
 import VideoIframeResponsive from './components/VideoIframeResponsive';
 import { BannerMainContainer, ContentAreaContainer, WatchButton } from './styles';
+import imageBkg from '../../assets/HAL-9000-Screensaver.jpg';
+import imageYoutube from '../../assets/maxresdefaultYoutube.jpg';
 
 function getYouTubeId(youtubeURL) {
   return youtubeURL
@@ -16,7 +18,9 @@ export default function BannerMain({
   url,
 }) {
   const youTubeID = getYouTubeId(url);
-  const bgUrl = `https://img.youtube.com/vi/${youTubeID}/maxresdefault.jpg`;
+  const bgUrlOriginal = `https://img.youtube.com/vi/${youTubeID}/maxresdefault.jpg`;
+  const bgUrl = imageBkg;
+  const bgUrlBase = imageYoutube;
 
   return (
     <BannerMainContainer backgroundImage={bgUrl}>
