@@ -32,20 +32,16 @@ function CadastroVideo() {
   // ============ use é paa funcionar o Custom Hook!
 
   useEffect(() => {
-    if (window.location.href.includes('localhost')) {
-      const URL = window.location.hostname.includes('localhost') 
-        ? 'http://localhost:8080/videos'
-        : 'https://philgflix.herokuapp.com/videos';
-      fetch(URL)
-        .then(async (respostaDoServer) => {
-          if (respostaDoServer.ok) {
-            const resposta = await respostaDoServer.json();
-            setVideos(resposta);
-            return;
-          }
-          throw new Error('Não foi possível pegar os dados');
-        });
-    }
+    const URL = 'https://philgflix.herokuapp.com/videos';
+    fetch(URL)
+      .then(async (respostaDoServer) => {
+        if (respostaDoServer.ok) {
+          const resposta = await respostaDoServer.json();
+          setVideos(resposta);
+          return;
+        }
+        throw new Error('Não foi possível pegar os dados');
+      });
   }, []);
 
   return (
@@ -105,11 +101,13 @@ function CadastroVideo() {
       <ul>
         {videos.map((video) => (
           <li key={`${video.id}`}>
-            {video.titulo} - {video.url}
+            {video.titulo}
+            {' '}
+            -
+            {video.url}
           </li>
         ))}
       </ul>
-
 
     </DefaultPage>
   );
