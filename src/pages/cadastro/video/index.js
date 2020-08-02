@@ -78,10 +78,6 @@ function CadastroVideo() {
         </Button>
       </form>
 
-      <Link to="/">
-        Ir para home
-      </Link>
-
     </DefaultPage>
   );
 }

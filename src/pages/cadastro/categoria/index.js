@@ -109,9 +109,6 @@ function CadastroCategoria() {
         ))}
       </ul>
 
-      <Button as={Link} className="Button" to="/cadastro/categoria">
-        Cadastrar Categoria
-      </Button>
     </DefaultPage>
   );
 }
