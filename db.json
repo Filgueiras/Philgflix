@@ -43,6 +43,246 @@
           "categoriaId": 1,
           "titulo": "Hal 9000 vs Macs e o bug do milênio",
           "url": "https://www.youtube.com/watch?v=eRmDsGFBHlo"
-        }
+        },
+        {
+            "id": 2,
+            "categoriaId": 1,
+        "titulo": "ID Software e Quake!",
+        "url": "https://www.youtube.com/watch?v=gbb9zOpUIwQ&"
+        },
+        {
+            "id": 3,
+            "categoriaId": 1,
+        "titulo": "Mortal Kombat nos Cinemas: Jogos Eletrônicos e Indústria Cultural (meu TCC em Publicidade)",
+        "url": "https://www.youtube.com/watch?v=9oZxHWXCHQQ"
+        },
+        {
+            "id": 4,
+            "categoriaId": 1,
+        "titulo": "Pequenos Planetas, em 2003... Discovery Kids (meu filho gostava)",
+        "url": "https://www.youtube.com/watch?v=s752-eDZlIA"
+        },
+        {
+            "id": 5,
+            "categoriaId": 1,
+        "titulo": "Falcão: I'm not dog,no! - Doris para Maiores",
+        "url": "https://www.youtube.com/watch?v=94-5CpxQVTk"
+        },
+        {
+            "id": 6,
+            "categoriaId": 1,
+        "titulo": "Em 2008, AIG quase quebrou e Unibanco fundiu com Itaú (animação feita por mim)",
+        "url": "https://www.youtube.com/watch?v=9af0s_ABnFo"
+        },
+        {
+            "id": 7,
+            "categoriaId": 1,
+        "titulo": "Globo: Retrospectiva 1999 - o último ano do milênio passado",
+        "url": "https://www.youtube.com/watch?v=dI_590n5pj8&t=13s"
+        },
+        {
+            "id": 8,
+            "categoriaId": 2,
+            "titulo": "Mark Zuckerberg falando no CS50, em Harvard",
+            "url": "https://www.youtube.com/watch?v=xFFs9UgOAlE"
+          },
+          {
+            "id": 9,
+            "categoriaId": 2,
+            "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
+            "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+          },
+          {
+            "id": 10,
+            "categoriaId": 2,
+            "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
+            "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+          },
+          {
+            "id": 11,
+            "categoriaId": 2,
+            "titulo": "Monte Carlo Simulation (MITx - EDX)",
+            "url": "https://www.youtube.com/watch?v=OgO1gpXSUzU&t=134s"
+          }, 
+          {
+            "id": 12,
+            "categoriaId": 2,
+            "titulo": "Usando Git Direito",
+            "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+          },
+          {
+            "id": 13,
+            "categoriaId": 2,
+            "titulo": "SEO com React",
+            "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          },
+          {
+            "id": 14,
+            "categoriaId": 2,
+            "titulo": "Pare de chutar e aprenda a display: inline #01",
+            "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+          },
+          {
+            "id": 15,
+            "categoriaId": 2,
+            "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
+            "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+          },
+          {
+            "id": 16,
+            "categoriaId": 2,
+            "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
+            "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+          },
+          {
+            "id": 17,
+            "categoriaId": 2,
+            "titulo": "Novidades do Angular v9",
+            "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+          },
+          {
+            "id": 18,
+            "categoriaId": 3,
+            "titulo": "Digital Evolution - Nadim Habib (SAS Lisboa 2018)",
+            "url": "https://www.youtube.com/watch?v=ap6DJMHq3E0"
+          },
+          {
+            "id": 19,
+            "categoriaId": 3,
+            "titulo": "Teste de Turing",
+            "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+          },
+          {
+            "id": 20,
+            "categoriaId": 3,
+            "titulo": "What is a Graph Database? (Neo4J)",
+            "url": "https://www.youtube.com/watch?v=REVkXVxvMQE"
+          },
+          {
+            "id": 21,
+            "categoriaId": 3,
+            "titulo": "Blockchain: o que é a RSK?",
+            "url": "https://www.youtube.com/watch?v=hu5mV_OkJs0&t=280s"
+          },
+          {
+            "id": 22,
+            "categoriaId": 3,
+            "titulo": "Intro to Machine Learning (Microsoft React Redmond)",
+            "url": "https://www.youtube.com/watch?v=jX2hSjiI5Y0"
+          },
+          {
+            "id": 23,
+            "categoriaId": 4,
+            "titulo": "Lady Hawke - O feitiço de Áquila",
+            "url": "https://www.youtube.com/watch?v=b0BTs66JAgM"
+          },        
+          {
+            "id": 24,
+            "categoriaId": 4,
+            "titulo": "Star Wars VI: O Retorno de Jedi",
+            "url": "https://www.youtube.com/watch?v=T0_ttlBLd9g"
+          },
+          {
+            "id": 25,
+            "categoriaId": 4,
+            "titulo": "Coração Valente",
+            "url": "https://www.youtube.com/watch?v=1NJO0jxBtMo"
+          },
+          {
+            "id": 26,
+            "categoriaId": 4,
+            "titulo": "Oblivion",
+            "url": "https://www.youtube.com/watch?v=vu24CjeSsLs"
+          },
+          {
+            "id": 27,
+            "categoriaId": 4,
+            "titulo": "Eu, robô",
+            "url": "https://www.youtube.com/watch?v=JWqCEzZEv2k"
+          },        
+          {
+            "id": 28,
+            "categoriaId": 4,
+            "titulo": "Dança com Lobos",
+            "url": "https://www.youtube.com/watch?v=8ZcT9OGsmFA"
+          },
+          {
+            "id": 29,
+            "categoriaId": 4,
+            "titulo": "Minority Report",
+            "url": "https://www.youtube.com/watch?v=WncVJ0TNCDc"
+          },
+          {
+            "id": 30,
+            "categoriaId": 4,
+            "titulo": "Tron (2)",
+            "url": "https://www.youtube.com/watch?v=JgzAZdK7uWQ"
+          },
+          {
+            "id": 31,
+            "categoriaId": 4,
+            "titulo": "Mary Shelley's Frankenstein",
+            "url": "https://www.youtube.com/watch?v=GFaY7r73BIs"
+          },
+          {
+            "id": 32,
+            "categoriaId": 5,
+            "titulo": "Resident Evil 3: Nemesis",
+            "url": "https://www.youtube.com/watch?v=qnEmuhdVPRw"
+          },
+          {
+            "id": 33,
+            "categoriaId": 5,
+            "titulo": "Green Beret (arcade)",
+            "url": "https://www.youtube.com/watch?v=gq93SKoNauw"
+          },
+          {
+            "id": 34,
+            "categoriaId": 5,
+            "titulo": "Atari Stun Runner (arcade)",
+            "url": "https://www.youtube.com/watch?v=735p06-UExA"
+          },
+          {
+            "id": 35,
+            "categoriaId": 5,
+            "titulo": "Diablo 4 (coming soon)",
+            "url": "https://www.youtube.com/watch?v=gSGSaxKAz4Y"
+          },
+          {
+            "id": 36,
+            "categoriaId": 5,
+            "titulo": "Diablo: do 1996 até 2020",
+            "url": "https://www.youtube.com/watch?v=jXGMDxP4n0o"
+          },
+          {
+            "id": 37,
+            "categoriaId": 6,
+            "titulo": "Aprender ou adquirir idioma?",
+            "url": "https://www.youtube.com/watch?v=illApgaLgGA&t=1094s"
+          },
+          {
+            "id": 38,
+            "categoriaId": 6,
+            "titulo": "SAS: auxiliary information in your model using Bayesian Methods",
+            "url": "https://www.youtube.com/watch?v=M8MbWMEIl7Q&t=77s"
+          },
+          {
+            "id": 39,
+            "categoriaId": 6,
+            "titulo": "Frameworks",
+            "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+          },
+          {
+            "id": 40,
+            "categoriaId": 6,
+            "titulo": "Jupyter Notebooks",
+            "url": "https://www.youtube.com/watch?v=mVGJWn9IPcc"
+          },
+          {
+            "id": 41,
+            "categoriaId": 6,
+            "titulo": "Estudo de Alemão: DW Aprendendo com Nico",
+            "url": "https://www.youtube.com/watch?v=4-eDoThe6qo"
+          }
       ]
 }

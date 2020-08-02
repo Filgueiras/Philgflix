@@ -29,11 +29,13 @@ function CadastroVideo() {
     );
   }
 
-  // ============
+  // ============ use é paa funcionar o Custom Hook!
 
   useEffect(() => {
     if (window.location.href.includes('localhost')) {
-      const URL = 'http://localhost:8080/videos';
+      const URL = window.location.hostname.includes('localhost') 
+        ? 'http://localhost:8080/videos'
+        : 'https://philgflix.herokuapp.com/videos';
       fetch(URL)
         .then(async (respostaDoServer) => {
           if (respostaDoServer.ok) {
@@ -66,6 +68,14 @@ function CadastroVideo() {
       >
 
         <FormField
+          label="Categoria do Vídeo"
+          type="text"
+          name="categoria"
+          value={values.categoria}
+          onChange={handleChange}
+        />
+
+        <FormField
           label="Título do Vídeo"
           type="text"
           name="titulo"
@@ -73,10 +83,33 @@ function CadastroVideo() {
           onChange={handleChange}
         />
 
+        <FormField
+          label="URL do Vídeo"
+          type="text"
+          name="url"
+          value={values.url}
+          onChange={handleChange}
+        />
+
         <Button type="submit">
           Confirmar
         </Button>
       </form>
+
+      {videos.length === 0 && (
+      <div>
+        Buscando dados...
+      </div>
+      )}
+
+      <ul>
+        {videos.map((video) => (
+          <li key={`${video.id}`}>
+            {video.titulo} - {video.url}
+          </li>
+        ))}
+      </ul>
+
 
     </DefaultPage>
   );

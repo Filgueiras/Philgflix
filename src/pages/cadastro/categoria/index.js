@@ -33,7 +33,9 @@ function CadastroCategoria() {
 
   useEffect(() => {
     if (window.location.href.includes('localhost')) {
-      const URL = 'http://localhost:8080/categorias';
+      const URL = window.location.hostname.includes('localhost') 
+        ? 'http://localhost:8080/categorias'
+        : 'https://philgflix.herokuapp.com/categorias';
       fetch(URL)
         .then(async (respostaDoServer) => {
           if (respostaDoServer.ok) {
@@ -97,7 +99,7 @@ function CadastroCategoria() {
 
       {categorias.length === 0 && (
       <div>
-        Buscando dados...
+        Buscando dados de categorias existentes...
       </div>
       )}
 
