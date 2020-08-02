@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+/* eslint-disable linebreak-style */
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import DefaultPage from '../../../components/DefaultPage';
 import FormField from '../../../components/FormField';
@@ -10,7 +11,6 @@ function CadastroCategoria() {
     descricao: '',
     cor: '',
   };
-
   const [categorias, setCategorias] = useState([]);
   const [values, setValues] = useState(valoresIniciais);
 
@@ -29,23 +29,6 @@ function CadastroCategoria() {
     );
   }
 
-  // ============
-
-  useEffect(() => {
-    if (window.location.href.includes('localhost')) {
-      const URL = 'http://localhost:8080/categorias';
-      fetch(URL)
-        .then(async (respostaDoServer) => {
-          if (respostaDoServer.ok) {
-            const resposta = await respostaDoServer.json();
-            setCategorias(resposta);
-            return;
-          }
-          throw new Error('Não foi possível pegar os dados');
-        });
-    }
-  }, []);
-
   return (
     <DefaultPage>
       <h1>
@@ -55,7 +38,6 @@ function CadastroCategoria() {
 
       <form onSubmit={function handleSubmit(infosDoEvento) {
         infosDoEvento.preventDefault();
-
         setCategorias([
           ...categorias,
           values,
@@ -89,29 +71,22 @@ function CadastroCategoria() {
           onChange={handleChange}
         />
 
-        <Button type="submit">
-          Confirmar
+        <Button>
+          Cadastrar
         </Button>
-
       </form>
-
-      {categorias.length === 0 && (
-      <div>
-        Buscando dados...
-      </div>
-      )}
 
       <ul>
         {categorias.map((categoria) => (
-          <li key={`${categoria.id}`}>
+          <li key={`${categoria.nome}`}>
             {categoria.nome}
           </li>
         ))}
       </ul>
 
-      <Button as={Link} className="Button" to="/cadastro/categoria">
-        Cadastrar Categoria
-      </Button>
+      <Link to="/">
+        Ir para home
+      </Link>
     </DefaultPage>
   );
 }
