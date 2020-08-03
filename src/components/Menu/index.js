@@ -12,11 +12,8 @@ function Menu() {
         <img className="Logo" src={Logo} alt="Philg Flix logo" />
       </Link>
 
-      <Button as={Link} className="Button" to="/cadastro/video">
-        Vídeos
-      </Button>
-      <Button as={Link} className="Button" to="/cadastro/categoria">
-        Categorias
+      <Button as={Link} className="Button" to="/pages/sobre">
+        Sobre
       </Button>
     </nav>
   );

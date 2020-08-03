@@ -1,0 +1,40 @@
+Todas as referências importantes da Imersão:
+
+AULA 01
+
+1) Downloads e instalações diversas
+
+2) Testar Node 
+> node --version
+> node --version
+
+3) Criar projeto React: 
+> npx create-react-app nome-do-seu-app
+
+4) Iniciar: npm start
+
+
+
+` `  <= Marcar texto com mais de uma linha
+
+
+Links:
+
+Aula 01
+https://fontmeme.com/netflix-font/
+https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components
+https://www.figma.com/
+https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare
+https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode
+Criar projeto React Native
+https://www.youtube.com/watch?v=k1vdmXDgMJI&list=PLTcmLKdIkOWkkBSilAr6iqdnSDXdiiyIq
+Deixar seu projeto mais profissa
+https://www.youtube.com/watch?v=yMRSDdifGW8
+
+Aula 02
+React Router DOM: fazendo o SPA acontecer
+https://reactrouter.com/web/guides/quick-start
+
+Minhas notas:
+NewbieFlix: color #125719 
+Reset: css básico com dados iniciais - Link: https://gist.github.com/omariosouto/19dafd5ca155c46b3dcb31df89cfba55 (index.css)
