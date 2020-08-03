@@ -1,35 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import DefaultPage from '../../../components/DefaultPage';
-import FormField from '../../../components/FormField';
-import Button from '../../../components/Button';
 
-function CadastroCategoria() {
-  const valoresIniciais = {
-    nome: '',
-    descricao: '',
-    cor: '',
-  };
-
+function ConsultaCategoria() {
   const [categorias, setCategorias] = useState([]);
-  const [values, setValues] = useState(valoresIniciais);
-
-  function setValue(chave, valor) {
-    // chave: nome, descricao, bla, bli
-    setValues({
-      ...values,
-      [chave]: valor, // nome: 'valor'
-    });
-  }
-
-  function handleChange(infosDoEvento) {
-    setValue(
-      infosDoEvento.target.getAttribute('name'),
-      infosDoEvento.target.value,
-    );
-  }
-
-  // ============
 
   useEffect(() => {
     const URL = 'https://philgflix.herokuapp.com/categorias';
@@ -47,68 +20,48 @@ function CadastroCategoria() {
   return (
     <DefaultPage>
       <h1>
-        Cadastro de Categoria:
-        {values.nome}
+        Listagem de Categorias
       </h1>
-
-      <form onSubmit={function handleSubmit(infosDoEvento) {
-        infosDoEvento.preventDefault();
-
-        setCategorias([
-          ...categorias,
-          values,
-        ]);
-
-        setValues(valoresIniciais);
-      }}
-      >
-
-        <FormField
-          label="Nome da Categoria"
-          type="text"
-          name="nome"
-          value={values.nome}
-          onChange={handleChange}
-        />
-
-        <FormField
-          label="Descrição"
-          type="textarea"
-          name="descricao"
-          value={values.descricao}
-          onChange={handleChange}
-        />
-
-        <FormField
-          label="Cor"
-          type="color"
-          name="cor"
-          value={values.cor}
-          onChange={handleChange}
-        />
-
-        <Button type="submit">
-          Confirmar
-        </Button>
-
-      </form>
 
       {categorias.length === 0 && (
       <div>
         Buscando dados de categorias existentes...
       </div>
       )}
-
-      <ul>
+      <table className="table">
+        <tr>
+          <th>
+            Id
+          </th>
+          <th>
+            Nome
+          </th>
+          <th>
+            Descrição
+          </th>
+          <th>
+            Cor
+          </th>
+        </tr>
         {categorias.map((categoria) => (
-          <li key={`${categoria.id}`}>
-            {categoria.nome}
-          </li>
+          <tr key={`${categoria.id}`}>
+            <td>
+              {categoria.id}
+            </td>
+            <td>
+              {categoria.nome}
+            </td>
+            <td>
+              {categoria.descricao}
+            </td>
+            <td>
+              {categoria.cor}
+            </td>
+          </tr>
         ))}
-      </ul>
-
+      </table>
     </DefaultPage>
   );
 }
 
-export default CadastroCategoria;
+export default ConsultaCategoria;
