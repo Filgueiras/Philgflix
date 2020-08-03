@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/PhilgFlixLogo.png';
+import Logo from '../../assets/PhilgFlixLogo-150px.png';
 import './menu.css';
 import Button from '../Button';
 
