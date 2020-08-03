@@ -1,0 +1,9 @@
+.loading {
+    border-top: 10%;
+    border-bottom: 50%;
+    width: 100%;
+    text-align: center;
+    color: red;
+    background-color: whitesmoke;
+    font-size: 20px;
+}

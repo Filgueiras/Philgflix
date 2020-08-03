@@ -1,5 +1,6 @@
 import React from 'react';
 import DefaultPage from '../../components/DefaultPage';
+import './sobre.css';
 
 function Sobre() {
   return (
@@ -12,16 +13,18 @@ function Sobre() {
       </p>
       <p>
         Esta página é fruto do esforço de acompanhar a Imersão React da Alura (como indicado no rodapé) e "cair de cabeça"
-        neste mundo "javascript everywhere" e da web. Como este é o primeiro projeto com React da minha carreira, tive que
-        humildemente limitar o escopo para algo que coubesse no tempo da Imersão.
+        neste mundo "javascript everywhere" que é a web de hoje. Como este é o primeiro projeto com React da minha vida, tive que
+        humildemente limitar o escopo para algo que coubesse no tempo da Imersão (tive que relembrar CSS e não domino Javascript).
       </p>
       <p>
-        Os termos "Limitar o escopo" e "humildemente" na mesma frase resultam no famoso "fiz o que dava no prazo que eu tinha"
-        (e com conhecimento e tempo disponível da época). Devo fazer ajustes "Pós Imersão", mas talvez mantenha a página intacta para
+        Os termos "Limitar o escopo" e "humildemente" na mesma frase, para alguém que não desenvolvia para web, significam
+        "fiz o que dava no prazo que eu tinha"
+        (e com conhecimento da época).
+        Devo fazer ajustes "Pós-Imersão" nesta página, mas talvez a mantenha intacta para
         fazer um benchmark de conhecimento (avisarei aqui se houver uma nova página em outro endereço).
       </p>
       <p className="ouch">.</p>
-      <p>Enfim, este é o primeiro de muitos projetos... E, se quiser se conectar, fique à vontade:</p>
+      <p>Enfim, este certamente é o primeiro de muitos projetos... E, se quiser se conectar, fique à vontade:</p>
       <p className="ouch">.</p>
       <p className="linkedin"><a href="https://www.linkedin.com/in/marcofilgueiras/">LinkedIn</a></p>
       <p className="github"><a href="https://github.com/Filgueiras/Philgflix">Github (repo deste projeto)</a></p>
@@ -29,8 +32,22 @@ function Sobre() {
       <p className="instagram"><a href="https://www.instagram.com/marcofilgueiras/">Instagram</a></p>
       <p className="ouch">.</p>
       <p>
-        Você já percebeu que sou "newbie" em React, mas sou certificado SAS e MBA em Data Science pela FIAP.
-        Se quiserem saber mais ou "trocar conhecimento" sobre os assuntos, será uma grande satisfação.
+        Você já percebeu que sou "newbie" em React, mas sou certificado SAS (SAS® Certified Specialist: Base SAS 9.4 e 
+        SAS® Certified Professional: Advanced Programming Using SAS® 9.4) e MBA em Data Science pela FIAP.
+        Assim, se quiser saber mais sobre estes assuntos ou "trocar conhecimento", será uma grande satisfação.
+      </p>
+      <p>
+        Eu não era muito adepto de tecnologias Open Source até estudar as soluções para Big Data da Apache, da Hortonworks
+        (hoje Cloudera, com quem se fundiu) e, na verdade, antes de ver o quanto de coisa boa que saiu destas iniciativas
+        (ok, o Linux sempre foi interessante, mas complicado de usar para algumas finalidades não-acadêmicas).
+        Enfim, hoje as iniciativas Open e as comunidades que as envolvem são o que tem de mais valioso no mundo da
+        tecnologia e, por isso, não vou mais ficar de fora desta realidade.
+      </p>
+      <p>
+        Parabéns à Alura pela iniciativa e obrigado aos instrutores da Imersão: Marco Bruno, Juliana Negreiros
+        e Mario Souto, por partilhar o conhecimento. Claro que não posso deixar de fora o "eterno professor"
+        Paulo Silveira, com quem já tive aulas de Java nos cursos de Verão da USP e de quem sou cliente antigo, seja
+        pela Caelum, seja pela Alura.
       </p>
       <p className="ouch">.</p>
       <p>Links que me ajudaram a resolver alguns problemas + alguns que podem ser úteis em breve, rsrs</p>
