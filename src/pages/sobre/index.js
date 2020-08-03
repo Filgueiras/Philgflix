@@ -24,7 +24,9 @@ function Sobre() {
         fazer um benchmark de conhecimento (avisarei aqui se houver uma nova página em outro endereço).
       </p>
       <p className="ouch">.</p>
-      <p>Enfim, este certamente é o primeiro de muitos projetos... E, se quiser se conectar, fique à vontade:</p>
+      <p>Enfim, este certamente é o primeiro de muitos projetos... O que achei mais interessante foi a integração
+        entre Github, Vercel (front-end) e Heroku (back-end). 
+        Bom, isso foi sobre a conexão de códigos, mas se quiser conectar experiências e ideias, fique à vontade para me procurar:</p>
       <p className="ouch">.</p>
       <p className="linkedin"><a href="https://www.linkedin.com/in/marcofilgueiras/">LinkedIn</a></p>
       <p className="github"><a href="https://github.com/Filgueiras/Philgflix">Github (repo deste projeto)</a></p>
