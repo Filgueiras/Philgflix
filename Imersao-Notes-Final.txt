@@ -35,6 +35,10 @@ Aula 02
 React Router DOM: fazendo o SPA acontecer (controlar rotas e evitar reloading das páginas)
 https://reactrouter.com/web/guides/quick-start
 
+Aula 05
+Data List
+
+
 Minhas notas:
 NewbieFlix: color #125719 
 Reset: css básico com dados iniciais - Link: https://gist.github.com/omariosouto/19dafd5ca155c46b3dcb31df89cfba55 (index.css)

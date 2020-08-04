@@ -5,31 +5,26 @@ import FormField from '../../../../components/FormField';
 import Button from '../../../../components/Button';
 import useForm from '../../../../hooks/useForm';
 import videosRepository from '../../../../repositories/videos';
+import categoriasRepository from '../../../../repositories/categorias';
 
 function CadastroVideo() {
   const historico = useHistory();
+  const [categorias, setCategorias] = useState([]);
   const valoresIniciais = {
-    categoria: '6',
-    titulo: 'Dark: Adam é quem relamente diz ser?',
-    url: 'https://www.youtube.com/watch?v=-pKtGI4bL5A',
+    categoria: 'Outras coisas por aí',
+    titulo: '',
+    url: '',
   };
 
-  const { handleChange, values, clearForm } = useForm(valoresIniciais);
+  const { handleChange, values } = useForm(valoresIniciais);
   const [videos, setVideos] = useState([]);
 
   // ============ função iniciada com "use" é condição para funcionar o Custom Hook!
   useEffect(() => {
-    const URL = window.location.hostname.includes('localhost')
-      ? 'http://localhost:8080/videos'
-      : 'https://philgflix.herokuapp.com/videos';
-    fetch(URL)
-      .then(async (respostaDoServer) => {
-        if (respostaDoServer.ok) {
-          const resposta = await respostaDoServer.json();
-          setVideos(resposta);
-          return;
-        }
-        throw new Error('Não foi possível pegar os dados');
+    categoriasRepository
+      .getCategorias()
+      .then((categoriasRecuperadas) => {
+        setCategorias(categoriasRecuperadas);
       });
   }, []);
 
@@ -42,15 +37,22 @@ function CadastroVideo() {
 
       <form onSubmit={function handleSubmit(infosDoEvento) {
         infosDoEvento.preventDefault();
-        videosRepository.addVideo({
-          titulo: values.titulo,
-          url: values.url,
-          categoriaId: 6,
-        })
-          .then(() => {
-            console.log('Novo dado inserido.');
-            historico.push('/cadastro/video');
-          });
+
+        const categoriaEscolhida = categorias.find((categoria) => categoria.nome === values.categoria);
+
+        if (values.url.length > 0) {
+          videosRepository.addVideo({
+            titulo: values.titulo,
+            url: values.url,
+            categoriaId: categoriaEscolhida.id,
+          })
+            .then(() => {
+              console.log('Novo dado inserido.');
+              historico.push('/cadastro/video');
+            });
+        } else {
+          alert('Dados obrigatórios não preenchidos');
+        }
       }}
       >
 

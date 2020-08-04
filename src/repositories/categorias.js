@@ -17,6 +17,19 @@ function getCategoriasComVideos() {
     });
 }
 
+function getCategorias() {
+  console.log(URL_CATEGORIAS);
+  return fetch(`${URL_CATEGORIAS}`)
+    .then(async (respostaDoServidor) => {
+      if (respostaDoServidor.ok) {
+        const resposta = await respostaDoServidor.json();
+        return resposta;
+      }
+      throw new Error('Não foi possível obter os dados de categoria.');
+    });
+}
+
 export default {
   getCategoriasComVideos,
+  getCategorias,
 };

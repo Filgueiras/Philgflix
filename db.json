@@ -289,6 +289,24 @@
       "url": "https://www.youtube.com/watch?v=-pKtGI4bL5A",
       "categoriaId": 6,
       "id": 42
+    },
+    {
+      "titulo": "Lucas, a aranha",
+      "url": "https://www.youtube.com/watch?v=4HU6Z7anycw",
+      "categoriaId": 6,
+      "id": 43
+    },
+    {
+      "titulo": "",
+      "url": "",
+      "categoriaId": 1,
+      "id": 44
+    },
+    {
+      "titulo": "Qual a diferença entre forEach e map? ",
+      "url": "https://www.youtube.com/watch?v=JbzcLKiTThk",
+      "categoriaId": 6,
+      "id": 45
     }
   ]
 }
