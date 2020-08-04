@@ -12,7 +12,9 @@ function Home() {
   // ============ função iniciada com "use" é condição para funcionar o Custom Hook!
   useEffect(() => {
     console.log('Entrei na rotina');
-    const URL = 'https://philgflix.herokuapp.com/categorias?_embed=videos';
+    const URL = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias?_embed=videos'
+      : 'https://philgflix.herokuapp.com/categorias?_embed=videos';
     fetch(URL)
       .then(async (respostaDoServer) => {
         console.log('Fazendo requisição para o Heroku (async)');

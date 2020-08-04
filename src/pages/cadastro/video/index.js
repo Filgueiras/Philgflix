@@ -9,7 +9,9 @@ function ConsultaVideo() {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    const URL = 'https://philgflix.herokuapp.com/videos';
+    const URL = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/videos'
+      : 'https://philgflix.herokuapp.com/videos';
     fetch(URL)
       .then(async (respostaDoServer) => {
         if (respostaDoServer.ok) {

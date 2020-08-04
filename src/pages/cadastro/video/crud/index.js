@@ -30,7 +30,6 @@ function CadastroVideo() {
   }
 
   // ============ função iniciada com "use" é condição para funcionar o Custom Hook!
-
   useEffect(() => {
     const URL = 'https://philgflix.herokuapp.com/videos';
     fetch(URL)

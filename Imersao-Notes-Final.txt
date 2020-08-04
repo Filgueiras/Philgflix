@@ -32,7 +32,7 @@ Deixar seu projeto mais profissa
 https://www.youtube.com/watch?v=yMRSDdifGW8
 
 Aula 02
-React Router DOM: fazendo o SPA acontecer
+React Router DOM: fazendo o SPA acontecer (controlar rotas e evitar reloading das páginas)
 https://reactrouter.com/web/guides/quick-start
 
 Minhas notas:
