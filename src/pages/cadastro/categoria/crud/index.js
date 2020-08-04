@@ -4,33 +4,19 @@ import DefaultPage from '../../../../components/DefaultPage';
 import FormField from '../../../../components/FormField';
 import Button from '../../../../components/Button';
 import useForm from '../../../../hooks/useForm';
+import categoriasRepository from '../../../../repositories/categorias';
 
 function CadastroCategoria() {
   const historico = useHistory();
   const valoresIniciais = {
     nome: '',
     descricao: '',
-    cor: '',
+    cor: 'red',
   };
 
-  const {handleChange,values,clearForm} = useForm(valoresIniciais);
+  const { handleChange, values } = useForm(valoresIniciais);
   const [categorias, setCategorias] = useState([]);
   // ============
-
-  useEffect(() => {
-    const URL = window.location.hostname.includes('localhost')
-      ? 'http://localhost:8080/categorias'
-      : 'https://philgflix.herokuapp.com/categorias';
-    fetch(URL)
-      .then(async (respostaDoServer) => {
-        if (respostaDoServer.ok) {
-          const resposta = await respostaDoServer.json();
-          setCategorias(resposta);
-          return;
-        }
-        throw new Error('Não foi possível pegar os dados');
-      });
-  }, []);
 
   return (
     <DefaultPage>
@@ -43,10 +29,19 @@ function CadastroCategoria() {
       <form onSubmit={function handleSubmit(infosDoEvento) {
         infosDoEvento.preventDefault();
 
-        setCategorias([
-          ...categorias,
-          values,
-        ]);
+        if (values.nome.length > 0 && values.cor.length > 0 && values.nome.length > 0) {
+          categoriasRepository.addCategoria({
+            nome: values.nome,
+            descricao: values.descricao,
+            cor: values.cor,
+          })
+            .then(() => {
+              console.log('Novo dado inserido.');
+              historico.push('/cadastro/categoria');
+            });
+        } else {
+          alert('Dados obrigatórios não preenchidos');
+        }
 
         historico.push('/cadastro/categoria');
       }}
@@ -81,20 +76,6 @@ function CadastroCategoria() {
         </Button>
 
       </form>
-
-      {categorias.length === 0 && (
-      <div>
-        Buscando dados de categorias existentes...
-      </div>
-      )}
-
-      <ul>
-        {categorias.map((categoria) => (
-          <li key={`${categoria.id}`}>
-            {categoria.nome}
-          </li>
-        ))}
-      </ul>
 
     </DefaultPage>
   );

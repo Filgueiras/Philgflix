@@ -35,6 +35,12 @@
       "nome": "Outras coisas por aí",
       "descricao": "Curso sobre aprendizado na Alura",
       "cor": "#6b5be2"
+    },
+    {
+      "nome": "Bacana",
+      "descricao": "Coisa bacana demais",
+      "cor": "#ffff00",
+      "id": 7
     }
   ],
   "videos": [

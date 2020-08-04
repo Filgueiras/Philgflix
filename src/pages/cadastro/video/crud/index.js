@@ -85,12 +85,6 @@ function CadastroVideo() {
         </Button>
       </form>
 
-      {videos.length === 0 && (
-      <div>
-        Buscando dados...
-      </div>
-      )}
-
     </DefaultPage>
   );
 }

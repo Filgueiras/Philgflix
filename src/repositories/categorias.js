@@ -29,7 +29,26 @@ function getCategorias() {
     });
 }
 
+function addCategoria(novaCategoria) {
+  return fetch(`${URL_CATEGORIAS}`, {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify(novaCategoria),
+  })
+    .then(async (respostaDoServidor) => {
+      if (respostaDoServidor.ok) {
+        const resposta = await respostaDoServidor.json();
+        return resposta;
+      }
+      throw new Error('Não foi possível adicionar a nova categoria.');
+    });
+}
+
 export default {
   getCategoriasComVideos,
   getCategorias,
+  addCategoria,
+
 };
