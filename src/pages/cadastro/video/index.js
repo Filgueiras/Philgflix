@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import DefaultPage from '../../../components/DefaultPage';
+
 //  import logo from '../../../assets/youtube_logo.jpg';
 
 function ConsultaVideo() {
@@ -56,7 +57,7 @@ function ConsultaVideo() {
               {video.titulo}
             </td>
             <td>
-              <a href="{video.url}">Clique no link</a>
+              {video.url}
             </td>
           </tr>
         ))}
