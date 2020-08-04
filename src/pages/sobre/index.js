@@ -66,6 +66,7 @@ function Sobre() {
       <p><a href="https://blog.cloudboost.io/using-html5-canvas-with-react-ff7d93f5dc76">Problema da p&aacute;gina 404 com jogo (Canvas e React) Nota: n&atilde;o resolvi, mas sei o trabalho que d&aacute; por aqui, rsrs.</a></p>
       <p><a href="https://github.com/typicode/json-server">Json-Server: p&aacute;gina do Git</a></p>
       <p><a href="https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d"> Um pouco mais de informaç&atilde;o sobre Json-Server </a></p>
+      <p><a href="https://medium.com/@omariosouto/entendendo-como-fazer-ajax-com-a-fetchapi-977ff20da3c6"> Como fazer Ajax com FetchApi (Mario Ssssouto -> piada interna para quem estava na Imersão)</a></p>
       <p><a href="https://jsonformatter.org/">Validador de arquivos Json</a></p>
       <p><a href="https://gist.github.com/omariosouto/643616a1f923b3350675b643cccb462a">Super-refer&ecirc;ncias da Ju, Marco e Mario</a></p>
       <p><a href="https://httpstatusdogs.com/">N&atilde;o ajudou em nada, mas minha filha achou &eacute; &quot;fofo&quot; e pode ser &uacute;til: C&atilde;es e c&oacute;digos de status HTTP </a></p>
