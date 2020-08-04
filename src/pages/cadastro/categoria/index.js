@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import DefaultPage from '../../../components/DefaultPage';
+import './categoria.css';
 
 function ConsultaCategoria() {
   const [categorias, setCategorias] = useState([]);
@@ -32,6 +33,7 @@ function ConsultaCategoria() {
       </div>
       )}
       <table className="table">
+        <tr className="novo"><Link to="categoria/crud">Novo</Link></tr>
         <tr>
           <th>
             Id
@@ -46,7 +48,7 @@ function ConsultaCategoria() {
             Cor
           </th>
           <th>
-            Editar
+            {' '}
           </th>
         </tr>
         {categorias.map((categoria) => (
@@ -65,8 +67,6 @@ function ConsultaCategoria() {
             </td>
             <td>
               <Link to="/pages/boss">Editar</Link>
-              /
-              <Link to="categoria/crud">Novo</Link>
             </td>
           </tr>
         ))}

@@ -72,6 +72,18 @@ function Sobre() {
       <p><a href="https://momentjs.com/">Queria uma desculpa para usar, mas n&atilde;o deu tempo: API Moment JS</a></p>
       <p><a href="https://www.rapidtables.com/web/html/html-codes.html">Caracteres especiais e seus c&oacute;digos HTML</a></p>
       <p><a href="https://styled-components.com/docs/basics#getting-started">Eu queria ter chegado ao acerto de estilos, mas n&atilde;o deu tempo durante a imers&atilde;o...</a></p>
+      <p className="ouch">.</p>
+      <h2>Outros projetos muito interessantes feitos na imersão:</h2>
+      <p className="ouch">.</p>
+      <p><a href="https://cyberpunk-flix.vercel.app/">Cyberpunk 2077</a></p>
+      <p><a href="https://english-flix.vercel.app/">English Flix</a></p>
+      <p><a href="https://batflix.vercel.app/">Batflix</a></p>
+      <p><a href="https://dgsdev.vercel.app/">Coderflix</a></p>
+      <p><a href="https://armyflix.vercel.app/">BTS Flix</a></p>
+      <p><a href="https://vechill.vercel.app/">Hunter Flix</a></p>
+      <p><a href="https://romeroflix.vercel.app/">Romero Flix</a></p>
+      <p><a href="https://thaisflix.vercel.app/">Thais Flix</a></p>
+      <p><a href="https://gamerflix.vercel.app/">Gamer Flix</a></p>
     </DefaultPage>
   );
 }

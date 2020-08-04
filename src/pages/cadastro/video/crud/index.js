@@ -1,37 +1,26 @@
 import React, { useState, useEffect } from 'react';
-//  import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import DefaultPage from '../../../../components/DefaultPage';
 import FormField from '../../../../components/FormField';
 import Button from '../../../../components/Button';
+import useForm from '../../../../hooks/useForm';
 
 function CadastroVideo() {
+  const historico = useHistory();
   const valoresIniciais = {
     categoria: '',
     titulo: '',
     url: '',
   };
 
+  const { handleChange, values, clearForm } = useForm(valoresIniciais);
   const [videos, setVideos] = useState([]);
-  const [values, setValues] = useState(valoresIniciais);
-
-  function setValue(chave, valor) {
-    // chave: categoria, titulo, url
-    setValues({
-      ...values,
-      [chave]: valor, // nome: 'valor'
-    });
-  }
-
-  function handleChange(infosDoEvento) {
-    setValue(
-      infosDoEvento.target.getAttribute('titulo'),
-      infosDoEvento.target.value,
-    );
-  }
 
   // ============ função iniciada com "use" é condição para funcionar o Custom Hook!
   useEffect(() => {
-    const URL = 'https://philgflix.herokuapp.com/videos';
+    const URL = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/videos'
+      : 'https://philgflix.herokuapp.com/videos';
     fetch(URL)
       .then(async (respostaDoServer) => {
         if (respostaDoServer.ok) {
@@ -58,12 +47,12 @@ function CadastroVideo() {
           values,
         ]);
 
-        setValues(valoresIniciais);
+        historico.push('/cadastro/video');
       }}
       >
 
         <FormField
-          label="Categoria do Vídeo"
+          label="Categoria"
           type="text"
           name="categoria"
           value={values.categoria}
@@ -71,7 +60,7 @@ function CadastroVideo() {
         />
 
         <FormField
-          label="Título do Vídeo"
+          label="Título"
           type="text"
           name="titulo"
           value={values.titulo}
@@ -79,7 +68,7 @@ function CadastroVideo() {
         />
 
         <FormField
-          label="URL do Vídeo"
+          label="URL"
           type="text"
           name="url"
           value={values.url}

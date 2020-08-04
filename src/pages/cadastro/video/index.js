@@ -35,6 +35,7 @@ function ConsultaVideo() {
       </div>
       )}
       <table className="table">
+        <tr><Link to="video/crud">Novo</Link></tr>
         <tr>
           <th>
             Id V&iacute;deo
@@ -49,7 +50,7 @@ function ConsultaVideo() {
             URL
           </th>
           <th>
-            Editar/Novo
+            {' '}
           </th>
         </tr>
         {videos.map((video) => (
@@ -68,8 +69,6 @@ function ConsultaVideo() {
             </td>
             <td>
               <Link to="/pages/boss">Editar</Link>
-              /
-              <Link to="video/crud">Novo</Link>
             </td>
           </tr>
         ))}
