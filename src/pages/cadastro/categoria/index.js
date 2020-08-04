@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import DefaultPage from '../../../components/DefaultPage';
 
 function ConsultaCategoria() {
@@ -42,6 +43,9 @@ function ConsultaCategoria() {
           <th>
             Cor
           </th>
+          <th>
+            Editar
+          </th>
         </tr>
         {categorias.map((categoria) => (
           <tr key={`${categoria.id}`}>
@@ -56,6 +60,11 @@ function ConsultaCategoria() {
             </td>
             <td>
               {categoria.cor}
+            </td>
+            <td>
+              <Link to="/pages/boss">Editar</Link>
+              /
+              <Link to="categoria/crud">Novo</Link>
             </td>
           </tr>
         ))}

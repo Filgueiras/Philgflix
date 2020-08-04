@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import DefaultPage from '../../../components/DefaultPage';
 
+//  <a href="{video.url}">Clique no link</a>
 //  import logo from '../../../assets/youtube_logo.jpg';
 
 function ConsultaVideo() {
@@ -44,6 +46,9 @@ function ConsultaVideo() {
           <th>
             URL
           </th>
+          <th>
+            Editar/Novo
+          </th>
         </tr>
         {videos.map((video) => (
           <tr key={`${video.id}`}>
@@ -58,6 +63,11 @@ function ConsultaVideo() {
             </td>
             <td>
               {video.url}
+            </td>
+            <td>
+              <Link to="/pages/boss">Editar</Link>
+              /
+              <Link to="video/crud">Novo</Link>
             </td>
           </tr>
         ))}

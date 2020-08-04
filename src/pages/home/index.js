@@ -41,6 +41,7 @@ function Home() {
       <div className="loading">
         Conectando ao servidor Philg Flix...
         (calma que a gente é humilde e tem servidor free)
+
       </div>
       )}
 
