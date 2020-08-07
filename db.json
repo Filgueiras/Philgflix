@@ -35,6 +35,12 @@
       "nome": "Outras coisas por aí",
       "descricao": "Curso sobre aprendizado na Alura",
       "cor": "#6b5be2"
+    },
+    {
+      "nome": "SAS ",
+      "descricao": "Vídeos sobre uma das plataformas de dados mais conceituada atualmente.",
+      "cor": "#1818b6",
+      "id": 7
     }
   ],
   "videos": [
@@ -289,6 +295,12 @@
       "url": "https://www.youtube.com/watch?v=-pKtGI4bL5A",
       "categoriaId": 6,
       "id": 42
+    },
+    {
+      "titulo": "SAS VI - Entidades e Relacionamentos",
+      "url": "https://www.youtube.com/watch?v=UiEfppxynaU",
+      "categoriaId": 7,
+      "id": 43
     }
   ]
 }
